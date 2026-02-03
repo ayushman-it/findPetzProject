@@ -12,6 +12,8 @@ import ShopView from "./ShopView";
 import AllStore from "./AllStore";
 import UserProfile from "./UserProfile";
 import Categories from "./Categories";
+import AllHostels from "./AllHostels";
+import HostelView from "./HostelView";
 
 
 function Nav() {
@@ -181,6 +183,8 @@ function Nav() {
                 <Route path="/allShop" element={<AllStore></AllStore>} />
                 <Route path="/userProfile" element={<UserProfile></UserProfile>} />
                 <Route path="/categories" element={<Categories />} />
+                <Route path="/allPetHostel" element={<AllHostels />} />
+                <Route path="/hostelView" element={<HostelView />} />
 
             </Routes>
 

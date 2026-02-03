@@ -25,7 +25,7 @@ export default function Categories() {
       {/* SEARCH */}
       <div className="search-bar">
         <i className="bi bi-search"></i>
-        <input type="text" placeholder="Search FindPetz" />
+        <input type="text" placeholder="Search FindPetzzz" />
       </div>
 
       {/* LOCATION */}
@@ -53,7 +53,7 @@ export default function Categories() {
       </div>
 
       {/* EOSS */}
-      <h6 className="section-title">FindPetz EOSS – Up To 60% Off</h6>
+      <h6 className="section-title">FindPetzzz EOSS – Up To 60% Off</h6>
       <div className="card-grid">
         {eoss.map((item, i) => (
           <Link to={`/category/${item.slug}`} className="cat-card" key={i}>

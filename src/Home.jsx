@@ -168,6 +168,149 @@ function Home() {
                 </div>
             </section>
 
+            <div className="container">
+                <div className="position-relative mt-4">
+
+                    <h4 className="fw-bold mb-1">Comfortable Pet Hostels</h4>
+                    <p className="text-muted mb-3">
+                       <small> Safe, hygienic stays with 24/7 care while you’re away from your furry friends.</small>
+                    </p>
+
+
+                    <div className="pet-slider d-flex overflow-auto gap-3 pb-2">
+
+                        {[
+                            {
+                                name: "Happy Paws Hostel",
+                                area: "Bengaluru, Whitefield",
+                                price: "₹499/day",
+                                img: "https://happypetproduction.s3.ap-south-1.amazonaws.com/sp/stay-at-zanias-bannerghatta-road-bengaluru-img233.webp",
+                            },
+                            {
+                                name: "Furry Friends Stay",
+                                area: "Bengaluru, Yelahanka",
+                                price: "₹399/day",
+                                img: "https://www.thepetcareindia.com/assets/images/dog-world-img/dog-hostel.webp",
+                            },
+                            {
+                                name: "Paw House",
+                                area: "Bengaluru, HSR",
+                                price: "₹450/day",
+                                img: "https://happypetproduction.s3.ap-south-1.amazonaws.com/sp/namma-pet-boutique-sanjay-nagar-bengaluru-img20562.webp",
+                            },
+                            {
+                                name: "Pet Paradise",
+                                area: "Bengaluru, Malleshwaram",
+                                price: "₹550/day",
+                                img: "https://happypetproduction.s3.ap-south-1.amazonaws.com/sp/pawsncollars-hsr-layout-sector-4-bengaluru-img20545.webp",
+                            }
+                        ].map((item, i) => (
+                            <Link key={i} to="/HostelView" className="text-decoration-none text-dark">
+                                <div className="hostel-card flex-shrink-0">
+
+                                    <div className="hostel-img">
+                                        <img src={item.img} alt={item.name} />
+                                        <span className="price-badge">{item.price}</span>
+                                    </div>
+
+                                    <div className="hostel-body">
+                                        <h6 className="mb-1">{item.name}</h6>
+                                        <p className="small text-muted mb-0">{item.area}</p>
+                                    </div>
+
+                                </div>
+                            </Link>
+                        ))}
+
+                    </div>
+
+                    <div className="text-end mt-2">
+                        <Link to="/allPetHostel" className="text-warning fw-semibold">
+                            View All <i className="bi bi-arrow-right"></i>
+                        </Link>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="container my-4">
+
+                <div className="d-flex justify-content-between align-items-center mb-2">
+                    <div className="head">  <h4 className="fw-bold mb-1">Trusted Pet Breeders</h4>
+                        <p className="text-muted mb-3">
+                            <small>Find healthy, verified puppies and kitten.</small>
+                        </p></div>
+
+                    <a href="/allBreeders" className="text-warning fw-semibold" style={{ fontSize: "12px" }}>
+                        View All
+                    </a>
+                </div>
+
+                <div className="pet-slider d-flex gap-3 overflow-auto pb-2">
+
+                    {[
+                        {
+                            name: "Royal Paws Kennel",
+                            breed: "Golden Retriever",
+                            city: "Bengaluru",
+                            price: "₹25,000",
+                            img: "https://images.unsplash.com/photo-1558788353-f76d92427f16",
+                        },
+                        {
+                            name: "Elite Canine House",
+                            breed: "German Shepherd",
+                            city: "Bengaluru",
+                            price: "₹30,000",
+                            img: "https://content3.jdmagicbox.com/v2/comp/delhi/s5/011pxx11.xx11.100217120520.d9s5/catalogue/canine-elite-mehrauli-delhi-dog-kennel-dealers-2dzzlfp.jpg",
+                        },
+                        {
+                            name: "Paw Heaven Breeders",
+                            breed: "Labrador",
+                            city: "Bengaluru",
+                            price: "₹20,000",
+                            img: "https://images.unsplash.com/photo-1517849845537-4d257902454a",
+                        },
+                        {
+                            name: "Tiny Tails Farm",
+                            breed: "Pomeranian",
+                            city: "Bengaluru",
+                            price: "₹18,000",
+                            img: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
+                        },
+                    ].map((item, i) => (
+                        <a href="/breederView" key={i} className="text-decoration-none text-dark">
+                            <div className="breeder-card flex-shrink-0">
+
+                                <div className="breeder-img">
+                                    <img src={item.img} alt={item.name} />
+                                    <span className="breed-badge">{item.breed}</span>
+                                </div>
+
+                                <div className="breeder-body">
+                                    {/* Primary */}
+                                    <p className="mb-0 fw-semibold text-truncate" style={{ fontSize: "13px" }}>
+                                        {item.name}
+                                    </p>
+
+                                    {/* Secondary */}
+                                    <p className="mb-0 text-muted" style={{ fontSize: "11px" }}>
+                                        {item.city}
+                                    </p>
+
+                                    {/* Emphasis */}
+                                    <p className="mb-0 fw-bold text-warning" style={{ fontSize: "12px" }}>
+                                        {item.price}
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+                    ))}
+
+                </div>
+            </div>
+
+
             <section className="container my-5">
                 <div className="d-flex justify-content-between align-items-center mb-3">
                     <div>
@@ -293,6 +436,9 @@ function Home() {
                 </div>
 
             </section>
+
+
+
 
         </>
     )

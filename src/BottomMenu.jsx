@@ -39,7 +39,7 @@ const BottomMenu = () => {
                         className="text-decoration-none text-dark d-flex flex-column align-items-center justify-content-center"
                     >
                         <i className="bi bi-shop fs-5"></i>
-                        <span style={{ fontSize: "10px" }}>findPetz Hub</span>
+                        <span style={{ fontSize: "10px" }}>FindPetzz Hub</span>
                     </Link>
                 </li>
 
@@ -83,7 +83,7 @@ const BottomMenu = () => {
 
                 {/* Header */}
                 <div className="offcanvas-header justify-content-between px-3">
-                    <h6 className="fw-bold m-0">FindPetz Cart</h6>
+                    <h6 className="fw-bold m-0">FindPetzz Cart</h6>
                     <button className="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
 

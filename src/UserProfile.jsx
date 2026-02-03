@@ -22,10 +22,10 @@ const UserProfile = () => {
 
             <hr />
 
-            {/* FINDPETZ BRAND */}
-            <MenuItem label="FindPetz Stores & Spas" icon="bi-shop" />
-            <MenuItem label="FindPetz Guides" icon="bi-journal" />
-            <MenuItem label="FindPetz Foundation" icon="bi-heart-pulse" />
+            {/* FindPetzz BRAND */}
+            <MenuItem label="FindPetzz Stores & Spas" icon="bi-shop" />
+            <MenuItem label="FindPetzz Guides" icon="bi-journal" />
+            <MenuItem label="FindPetzz Foundation" icon="bi-heart-pulse" />
 
             <hr />
 
@@ -42,7 +42,7 @@ const UserProfile = () => {
           </div>
 
           <p className="text-muted small mt-4 fw-bold">
-            MADE FOR &<br />BY FINDPETZ
+            MADE FOR &<br />BY FindPetzz
           </p>
         </div>
 
